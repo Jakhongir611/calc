@@ -5,8 +5,8 @@ let scr = doc.querySelector('script')
 let cont = doc.createElement('div')
 let top_sc = doc.createElement('div')
 let bot_sc = doc.createElement('div')
-let camera = doc.createElement('div')
-let web_camera = doc.createElement('div')
+// let camera = doc.createElement('div')
+// let web_camera = doc.createElement('div')
 // let theme = doc.createElement('div')
 
 
@@ -43,8 +43,8 @@ body.insertBefore(cont, scr)
 cont.classList.add('container')
 top_sc.classList.add('top_screen')
 bot_sc.classList.add('bottom_screen')
-camera.classList.add('camera')
-web_camera.classList.add('web_camera')
+// camera.classList.add('camera')
+// web_camera.classList.add('web_camera')
 
 
 
@@ -56,8 +56,8 @@ web_camera.classList.add('web_camera')
 // phone.append(cont)
 cont.append(top_sc)
 cont.append(bot_sc)
-top_sc.append(camera)
-camera.append(web_camera)
+// top_sc.append(camera)
+// camera.append(web_camera)
 top_sc.append(equal)
 top_sc.append(example)
 
