@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 370px;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 3px solid #000;
+}
+
+.top_screen {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bottom_screen {
+  width: 100%;
+  height: 55%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.camera {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  left: 49%;
+}
+
+.web_camera {
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  margin: 4% 1.5% 0 0;
+  border: 2px solid rgb(72, 72, 72);
+}
+
+input {
+  text-align: right;
+}
+
+.example {
+  width: 100%;
+  height: 30px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  outline: 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.equal {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  outline: 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.dark {
+  background-color: rgb(12, 7, 48);
+  color: #fff;
+}
+
+.subject {
+  width: 65px;
+  height: 35px;
+  border-radius: 25px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.sun_moon {
+  width: 36px;
+  height: 36px;
+  background: #101c65;
+  border-radius: 25px;
+  border: none;
+  transition: 300ms;
+}
+
+.moon_sun {
+  width: 36px;
+  height: 36px;
+  background: rgba(174, 174, 174, 0.288);
+  border-radius: 25px;
+  border: none;
+  transition: 300ms;
+}
