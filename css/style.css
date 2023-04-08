@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 370px;
+  width: 400px;
   height: 100vh;
   display: flex;
   margin: 0 auto;
@@ -33,7 +33,7 @@
 
 .item {
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #000;
+  border: 2px solid rgb(255, 255, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,28 +42,17 @@
   cursor: pointer;
 }
 
-.camera {
-  width: 20px;
-  height: 20px;
-  border-radius: 50px;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 99;
-  top: 10px;
-  left: 49%;
+@media (hover: hover) {
+  .item:hover {
+    background: rgb(255, 255, 0);
+    transition: 300ms;
+  }
 }
-
-.web_camera {
-  width: 13px;
-  height: 13px;
-  border-radius: 50px;
-  margin: 4% 1.5% 0 0;
-  border: 2px solid rgb(72, 72, 72);
+@media (hover: none) {
+  .item:active {
+    background: rgb(255, 255, 0);
+  }
 }
-
 input {
   text-align: right;
 }
@@ -88,33 +77,75 @@ input {
   font-size: 25px;
 }
 
+.big_container {
+  width: 400px;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 3px solid #000;
+}
+
+.big_top_screen {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+
+.big_bottom_screen {
+  width: 100%;
+  height: 65%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.big_item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 3s;
+}
+
+@media (hover: hover) {
+  .big_item:hover {
+    background: rgb(255, 255, 0);
+    transition: 200ms;
+  }
+}
+@media (hover: none) {
+  .big_item:active {
+    background: rgb(255, 255, 0);
+  }
+}
+.border {
+  border: 2px solid rgb(7, 90, 223);
+}
+
+@media (hover: hover) {
+  .border:hover {
+    background: rgb(7, 90, 223);
+  }
+}
+@media (hover: none) {
+  .border:active {
+    background: rgb(7, 90, 223);
+  }
+}
+.none {
+  display: none;
+}
+
 .dark {
   background-color: rgb(12, 7, 48);
   color: #fff;
-}
-
-.subject {
-  width: 65px;
-  height: 35px;
-  border-radius: 25px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-
-.sun_moon {
-  width: 36px;
-  height: 36px;
-  background: #101c65;
-  border-radius: 25px;
-  border: none;
-  transition: 300ms;
-}
-
-.moon_sun {
-  width: 36px;
-  height: 36px;
-  background: rgba(174, 174, 174, 0.288);
-  border-radius: 25px;
-  border: none;
-  transition: 300ms;
 }
